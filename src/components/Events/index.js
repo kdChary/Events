@@ -68,16 +68,19 @@ class Events extends Component {
 
     return (
       <div className="events-app">
-        <ul className="events-list">
-          {eventsList.map(eachEvent => (
-            <EventItem
-              key={eachEvent.id}
-              eventDetails={eachEvent}
-              eventClicked={this.eventClicked}
-              isClicked={eachEvent.id === initialEvent.id}
-            />
-          ))}
-        </ul>
+        <div className="events-container">
+          <h2 className="events-title">Events</h2>
+          <ul className="events-list">
+            {eventsList.map(eachEvent => (
+              <EventItem
+                key={eachEvent.id}
+                eventDetails={eachEvent}
+                eventClicked={this.eventClicked}
+                isClicked={eachEvent.id === initialEvent.id}
+              />
+            ))}
+          </ul>
+        </div>
       </div>
     )
   }
