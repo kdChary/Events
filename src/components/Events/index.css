@@ -1,13 +1,13 @@
 .events-app {
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
   font-family: 'Roboto';
   color: #ffffff;
 }
 
 .events-container {
   background-image: linear-gradient(to right, #64748b, #323f4b);
-  width: 60%;
+  width: 55%;
   padding: 13px;
 }
 .events-title {
@@ -17,7 +17,5 @@
 .events-list {
   padding-left: 0;
   display: flex;
-  /* justify-content: center; */
-  align-items: center;
   flex-wrap: wrap;
 }
