@@ -89,7 +89,7 @@ class Events extends Component {
           ) : (
             <ActiveEventRegistrationDetails
               key={initialEvent.id}
-              registrationDetails={initialEvent}
+              activeEventRegistrationStatus={initialEvent.registrationStatus}
             />
           )}
         </div>
