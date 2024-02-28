@@ -74,6 +74,7 @@ class Events extends Component {
               key={eachEvent.id}
               eventDetails={eachEvent}
               eventClicked={this.eventClicked}
+              isClicked={eachEvent.id === initialEvent.id}
             />
           ))}
         </ul>
