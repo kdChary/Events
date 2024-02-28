@@ -1,1 +1,36 @@
-/* Write your CSS here */
+.event-item {
+  list-style-type: none;
+  width: 45%;
+}
+
+.event-button {
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.event-image {
+  width: 136px;
+}
+
+.event-details {
+  margin: 0;
+}
+
+.event-name {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.event-location {
+  font-size: 9px;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+.clicked {
+  border: solid 2px #2dd4bf;
+  border-radius: 7px;
+}
