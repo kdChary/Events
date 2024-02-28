@@ -12,12 +12,8 @@ const EventItem = props => {
 
   return (
     <li className="event-item">
-      <button
-        type="button"
-        className={`event-button ${border}`}
-        onClick={onEventClicked}
-      >
-        <img src={imageUrl} alt="event" className="event-image" />
+      <button type="button" className="event-button" onClick={onEventClicked}>
+        <img src={imageUrl} alt="event" className={`event-image ${border}`} />
       </button>
 
       <div className="event-details">
