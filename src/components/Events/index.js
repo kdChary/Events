@@ -64,7 +64,7 @@ class Events extends Component {
 
   render() {
     const {initialEvent} = this.state
-    console.log(initialEvent)
+    const eventLength = initialEvent.length
 
     return (
       <div className="events-app">
@@ -80,6 +80,18 @@ class Events extends Component {
               />
             ))}
           </ul>
+        </div>
+        <div className="event-registrations-container">
+          {eventLength === 0 ? (
+            <p className="no-active-event">
+              Click on an event, to view its registration details
+            </p>
+          ) : (
+            <ActiveEventRegistrationDetails
+              key={initialEvent.id}
+              registrationDetails={initialEvent}
+            />
+          )}
         </div>
       </div>
     )
